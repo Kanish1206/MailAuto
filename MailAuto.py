@@ -44,10 +44,10 @@ st.header("Upload Files")
 
 uploaded_excel = st.file_uploader("Upload Excel File", type=["xlsx"])
 
-st.subheader("Upload Folder 1A (ZIP)")
+st.subheader("Upload Folder Part 1 (ZIP)")
 zip_1a = st.file_uploader("Upload 1A.zip", type=["zip"], key="zip1")
 
-st.subheader("Upload Folder 2A (ZIP)")
+st.subheader("Upload Folder Part 2 (ZIP)")
 zip_2a = st.file_uploader("Upload 2A.zip", type=["zip"], key="zip2")
 
 # ==============================
@@ -189,3 +189,4 @@ if uploaded_excel is not None:
             else:
 
                 send_emails(df)
+
