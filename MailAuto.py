@@ -12,7 +12,7 @@ from email import encoders
 # PAGE CONFIG
 # ==============================
 st.set_page_config(page_title="PAN Document Mailer", layout="wide")
-st.title("📧 PAN Based Bulk Email Sender")
+st.title("📧 Bulk Email Sender")
 
 # ==============================
 # SIDEBAR CONFIG
@@ -34,7 +34,7 @@ Please find attached the document(s) corresponding to your PAN: {PAN}.
 If you have any questions, please reply to this email.
 
 Best Regards,
-HR Team
+Account Team
 """
 
 # ==============================
@@ -187,4 +187,5 @@ if uploaded_excel is not None:
             elif not zip_1a and not zip_2a:
                 st.warning("Please upload at least one ZIP folder (1A or 2A)")
             else:
+
                 send_emails(df)
