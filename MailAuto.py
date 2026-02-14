@@ -1,12 +1,12 @@
-import time
-import zipfile
-import pandas as pd
-import smtplib
-import streamlit as st
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.base import MIMEBase
-from email import encoders
+#import time
+#import zipfile
+#import pandas as pd
+#import smtplib
+#import streamlit as st
+#from email.mime.multipart import MIMEMultipart
+#from email.mime.text import MIMEText
+#from email.mime.base import MIMEBase
+#from email import encoders
 
 # ==============================
 # PAGE CONFIG
@@ -189,4 +189,5 @@ if uploaded_excel is not None:
             else:
 
                 send_emails(df)
+
 
