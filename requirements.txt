@@ -1,4 +1,5 @@
-streamlit
-pandas
-openpyxl>=3.1.2
-et-xmlfile
+#streamlit
+#pandas
+#openpyxl>=3.1.2
+#et-xmlfile
+
